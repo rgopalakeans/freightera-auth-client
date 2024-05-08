@@ -1,0 +1,9 @@
+version: '3.4'
+services:
+  freightera-auth-client:
+    container_name: 'freightera-auth-client'
+    build:
+      context: ./
+    tty: true
+    volumes:
+      - .:/var/www/html

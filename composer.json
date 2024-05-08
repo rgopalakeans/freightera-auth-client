@@ -1,0 +1,27 @@
+{
+  "name": "freightera/freightera-auth-client",
+  "description": "Freightera Auth Client Library",
+  "type": "library",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=7.2",
+    "firebase/php-jwt": "^6.4",
+    "ext-curl": "*"
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Freightera\\AuthClient\\": "src/lib"
+    }
+  },
+  "autoload-dev": {
+    "classmap": [
+      "src/tests"
+    ]
+  }
+}
